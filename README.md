@@ -1,0 +1,119 @@
+# Temporal Error 
+# By Xinyue Cao
+
+## Short Description
+Temporal Error is a computational artwork that explores moments when time feels subtly wrong.
+Through immediate sound and delayed visual feedback, the work invites viewers to experience time not as a smooth flow, 
+but as something shaped, calculated, and occasionally unsettled by a computational system.
+
+## Concept / Intent
+Temporal Error investigates how small temporal mismatches can alter our sense of presence and causality.
+The work focuses on moments when an action and its response fail to align, producing a subtle feeling of disorientation.
+Rather than treating time as a continuous and neutral flow, the project frames time as something constructed by a computational system — calculated, 
+delayed, and mediated through code. By separating sound and image in time, the work reveals how technical decisions shape embodied experience and our perception of the present moment.
+
+##Technology Used
+The work is developed using p5.js (JavaScript) as a browser-based computational environment, with additional support from the p5.sound library for audio playback and manipulation.
+The system runs in real time within a web browser and is designed for audiovisual interaction.
+
+Temporal behavior in the work is structured using discrete timing logic rather than continuous response.
+System timing and delays are controlled using the millis() function in p5.js, allowing the work to introduce intentional pauses, interruptions, and misalignments between action and response.
+
+Visual output is generated through live webcam input and processed using the image() function.
+Previous frames are stored in a JavaScript array functioning as a temporal frame buffer, enabling delayed re-rendering of visual information.
+This buffering mechanism allows the image to appear consistently out of sync with the present moment.
+
+Sound operates on a separate temporal layer.
+Using p5.SoundFile, audio responds immediately to interaction, creating an intentional contrast between sonic immediacy and visual delay.
+This separation between sound and image is central to the work’s exploration of time as a constructed and interruptible experience.
+
+The project draws technical inspiration from existing p5.js glitch-based sketches and educational resources, including timing and scheduling approaches discussed 
+by The Coding Train, as well as official documentation from p5.js and MDN Web Docs.
+
+## How to Run / Install
+Temporal Error runs in a web browser and uses the webcam and audio system in real time. Open the project (via GitHub Pages or a local server), 
+allow camera access when prompted, and click once to enable audio. Interaction is controlled by clicking and holding the mouse: sound responds immediately to the duration of the press, 
+while visual disruption appears only after a short, system-controlled delay. Releasing the mouse causes the system to gradually return to its baseline state.
+
+The work is presented as a single-screen audiovisual setup.
+A laptop with an active webcam is positioned facing the participant, with audio played through speakers or headphones so the immediate sound response is clearly audible. 
+The piece is designed to be experienced by one participant at a time, standing close enough that the delayed and fragmented image is perceived as feedback to their own action rather than as a separate video.
+
+## Requirements
+Operating System: macOS Tahoe，P5js, Visual Studio Code Version
+Browser: Google Chrome (recommended for webcam and audio handling)
+Hardware: Laptop or desktop computer / Built-in or external webcam / Speakers or headphones / Projector
+Libraries / Frameworks: p5.js / p5.sound
+
+## Screenshots / Media
+The following images document the installation, setup process, and visual output of *Temporal Error*.  
+Together they show how the work is assembled, experienced, and perceived in space.
+
+![System sketch – temporal offset and visual processing](media/9.jpg)
+
+A hand-drawn sketch illustrating the system logic, including delayed visual buffering, scanline displacement, and temporal offset between action and response.
+
+![Equipment setup – laptop, speaker, and projector](media/10.jpg)
+
+The technical setup of the work, consisting of a laptop with integrated webcam, external audio output, and optional projection for spatial presentation.
+
+![Installation process – initial positioning](media/1.jpg)
+![Installation process – adjusting screen height and orientation](media/2.jpg)
+![Installation process – audio and cable arrangement](media/3.jpg)
+![Installation process – testing interaction and sound response](media/4.jpg)
+![Installation process – final alignment before presentation](media/5.jpg)
+
+Images documenting the step-by-step installation process, from physical positioning to system testing.
+
+![Visual output – delayed and fragmented image](media/6.jpg)
+![Visual output – glitch and temporal misalignment](media/7.jpg)
+![Visual output – accumulated visual disruption](media/8.jpg)
+
+Examples of the visual effects produced by the system, showing delayed frames, fragmentation, and temporal misalignment during interaction.
+
+
+
+## Credits / Acknowledgements
+Temporal Error was created by Xinyue Cao as part of Term 1 coursework in Computational Arts.
+
+The work builds on experiments in audiovisual glitch, delayed feedback, and time-based interaction.  
+Technical references and inspirations include:
+
+- p5.js reference documentation  
+- p5.sound library documentation  
+- Timing and scheduling concepts discussed in The Coding Train (Daniel Shiffman)  
+- JavaScript array-based frame buffering techniques (MDN Web Docs)
+
+- p5.js Reference: millis()  
+  https://p5js.org/reference/p5/millis/
+
+- p5.js Reference: image()  
+  https://p5js.org/reference/p5/image/
+
+- p5.sound Reference: p5.SoundFile  
+  https://p5js.org/reference/p5.sound/p5.SoundFile/
+
+- The Coding Train — Discrete timing and scheduling  
+  https://www.youtube.com/watch?v=E4RyStef-gY
+
+- JavaScript Array (frame buffer data structure)  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+- Web Serial API — MDN Web Docs  
+  https://developer.mozilla.org/en-US/docs/Web/API/Web_Serial_API
+  
+##License
+This project is shared for educational and research purposes.  
+All rights reserved by the artist.
+
+##Feedback & Reflection
+Peers and teaching assistants suggested introducing a mouse or other external input to more clearly guide audience interaction, 
+rather than relying solely on implicit gestures. They also advised against using the laptop’s built-in webcam, proposing a smaller 
+and more concealed external camera to reduce the visual dominance of the computer. This feedback made me reflect on how interface and hardware 
+choices shape audience perception and engagement, and how the system could become less device-centric in future iterations.
+
+## Contact / Links
+https://github.com/SionCao/SIONCAO
+
+## Vimeo video
+https://vimeo.com/1153385068?share=copy&fl=sv&fe=ci
